@@ -1,0 +1,22 @@
+header{
+    width: 100%;
+    height: auto;
+    max-height: calc(77px - 20px);
+    background-color: $black;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .menu_mobile{
+        display: block;
+        @include respond-to-min(720){
+            display: none;
+        }
+    }
+    .menu_desktop{
+        display: none;
+        @include respond-to-min(720){
+            display: block;
+        }
+    }
+}

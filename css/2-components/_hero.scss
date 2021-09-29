@@ -1,0 +1,207 @@
+.moduleHero{
+    width: 100%;
+    height: auto;
+    background: url(../img/bg-hero.jpg) no-repeat;
+    background-size: cover !important;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    .wrap{
+        z-index: 10;
+    }
+    .wrap-imgs{
+        max-width: 2140px; 
+        padding: 54px 0 125px;
+        position: relative; 
+        margin: auto;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .logo{
+        width: 100%;
+        max-width: 165px;
+        height: auto;
+        margin: 0px auto 0;
+        @include respond-to-min(720){
+            max-width: 385px;
+        }
+    }
+    .sub-logo{
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        margin: 0 auto;
+        max-width: 122px;
+        @include respond-to-min(720){
+            max-width: 385px;
+            transform: translate(-60px, 0);
+            margin-top: 48px;
+        }
+    }
+    .elementos{
+        height: 100%;
+        width: 50%;
+        top: 0;
+        display: block;
+        position: absolute;
+        z-index: 9;
+        background-size: contain;
+        background-repeat: no-repeat;
+        //overflow: hidden;
+        //border-bottom: 15px solid $laranja;
+        &.direita{
+            right: 0;
+            .croqui{
+                max-width: 517px;
+                width: 177%;
+                position: absolute;
+                right: 0;
+                z-index: 2;
+
+                top: auto;
+                bottom: 0%;
+                transform: translate(43%, 0);
+
+                @include respond-to-min(720){
+                    width: 74%;
+                    top: 0%;
+                    transform: translate(8%, 0);
+                    bottom: auto;
+                }
+            }
+            .circle1{
+                max-width: 399px;
+                position: absolute;
+                right: 0;
+                z-index: 3;
+                
+                top: auto;
+                bottom: -2%;
+                transform: translate(84%, 0%);
+                @include respond-to-min(980){
+                    top: 35%;
+                    transform: translate(45%, 0%);
+                    bottom: auto;
+                }
+            }
+            .ronaldo{
+                max-width: 512px;
+                width: 123%;
+                position: absolute;
+                right: 0;
+                z-index: 6;
+                top: auto;
+                bottom: -3%;
+                transform: translate(40%, 0%);
+                @include respond-to-min(980){
+                    width: 100%;
+                    top: 34%;
+                    transform: translate(10%, 0%);
+                    bottom: auto;
+                }
+            }
+            .circle2{
+                max-width: 366px;
+                position: absolute;
+                right: 0;
+                
+                top: auto;
+                bottom: -30%;
+                transform: translate(66%, 0%);
+
+                
+                z-index: 3;
+                @include respond-to-min(1000){
+                    top: 65%;
+                    transform: translate(-8%, 0%);
+                    bottom: auto;
+                    z-index: 2;
+                }
+            }
+            .circle3{
+                max-width: 466px;
+                position: absolute;
+                right: 0;
+                z-index: 1;
+
+                top: auto;
+                bottom: -47%;
+                transform: translate(15%, 0%);
+                @include respond-to-min(1360){
+                    top: 67%;
+                    transform: translate(-38%, 0%);
+                    bottom: auto;
+                }
+            }
+        }
+        &.esquerda{
+            left: 0;
+            .circle1{
+                max-width: 497px;
+                width: 69%;
+                position: absolute;
+                left: 0;
+                top: auto;
+                bottom: 7%;
+                transform: translate(-48%, -30%);
+                z-index: 2;
+                @include respond-to-min(720){
+                    top: 49%;
+                    bottom: auto;
+                    transform: translate(-26%, -30%); 
+                }
+            }
+            .neguinho-beijaflor{
+                max-width: 428px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: auto;
+                bottom: 9%;
+                transform: translate(-48%, -30%);
+                z-index: 3;
+                @include respond-to-min(1310){
+                    top: 44%;
+                    bottom: auto;
+                    width: 59%;
+                    transform: translate(-11%, -30%);
+                    
+                }
+            }
+            .foto{
+                max-width: 568px;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: auto;
+                bottom: 6%;
+                transform: translate(-33%, 17%);
+                z-index: 4;
+                @include respond-to-min(1310){
+                    width: 80%;
+                    top: 42%;
+                    bottom: auto;
+                    transform: translate(-12%, 0);
+                }
+            }
+            .circle2{
+                max-width: 667px;
+                width: 92%;
+                position: absolute;
+                left: 0;
+
+                top: auto;
+                bottom: -20%;
+                transform: translate(-42%, 0%);
+                z-index: 1;
+                @include respond-to-min(720){
+                    top: 72%;
+                    bottom: auto;
+                    transform: translate(-41%, -30%);
+                }
+            }
+        }
+    }
+}
