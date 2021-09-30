@@ -7,6 +7,9 @@
     <title>Boleta Premiada - A vida e as aventuras de Ronaldo Cezar Coelho</title>
     <meta name="description" content="A vida e as aventuras de Ronaldo Cezar Coelho">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    
 </head>
 <body>
     <main>
@@ -28,8 +31,8 @@
                 </div>
                 <div class="elementos esquerda">
                     <img alt="circle1" class="circle1" src="img/esquerda-hero-1.png">
-                    <img alt="neguinho-beijaflor" class="neguinho-beijaflor" src="img/esquerda-hero-2.png">
-                    <img alt="foto" class="foto" src="img/esquerda-hero-3.png">
+                        <img alt="neguinho-beijaflor" data-depth=".30" class="neguinho-beijaflor" src="img/esquerda-hero-2.png">
+                        <img alt="foto" class="foto" data-depth="-.30" src="img/esquerda-hero-3.png">
                     <img alt="circle2" class="circle2" src="img/esquerda-hero-4.png">
                 </div>
                 <div class="elementos direita">
@@ -44,6 +47,30 @@
         <section class="moduleContent">
 
             <div class="wrap">
+                <aside id="img-left-1" class="img-left-1 anm">
+                    <img alt="" data-depth=".15" src="img/exame-revista.png">
+                </aside>
+                <aside id="img-left-2" class="img-left-2 anm">
+                    <img alt="" data-depth="-.10" src="img/XMLID_1_-1.png">
+                    <img alt="" data-depth=".15" src="img/Group_152.png">
+                    <img alt="" data-depth="-.10" src="img/XMLID_1_.png">
+                </aside>
+                <aside id="img-left-3" class="img-left-3 anm">
+                    <img alt="" data-depth=".10" src="img/croped_img2.png">
+                    <img alt="" data-depth="-.15" src="img/Untitled-4_7.png">
+                </aside>
+                <aside id="img-right-1" class="img-right-1 anm">
+                    <img alt="" data-depth=".10" src="img/croped_img20210712_21401995_edit1_2.png">
+                    <img alt="" data-depth="-.10" src="img/Untitled-4_8.png">
+                </aside>
+                <aside id="img-right-2" class="img-right-2 anm">
+                    <img alt="" data-depth="-.10" src="img/Group_151.png">
+                    <img alt="" data-depth=".10" src="img/XMLID_1_2.png">
+                    <img alt="" data-depth="-.10" src="img/XMLID_1_2-1.png">
+                </aside>
+                <aside id="img-right-3" class="img-right-3 anm">
+                    <img alt="" data-depth=".10" src="img/croped_img20210712_21434110_edit1 1.png">
+                </aside>
                 <div class="container grid">
                     <div class="col85">
                         <article class="intro">
@@ -51,8 +78,10 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
                         </article>
                         <article class="logo-oferecimento">
-                            <h3>Oferecimento:</h3>
-                            <img alt="" class="logo-oferecimento" src="img/sulamerica_1.png">
+                            <div class="wrap">
+                                <h3>Oferecimento:</h3>
+                                <img alt="" src="img/sulamerica_1.png">
+                            </div>
                         </article>
 
                         <article class="moduloEpisodios">
@@ -63,36 +92,68 @@
                                     </figure>
                                 </div>
                                 <div class="info">
-                                    <span class="episode-label">Episódio #01 . 52 min</span>
+                                    <span class="episode-label">Episódio #01 • <span class="time">52 min</span></span>
                                     <h2>Lorem ipsum dolor sit amet</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna.</p>
-                                    <a href="#" class="btn">Ouça agora</a>
+                                    <a href="#" class="btn">
+                                        Ouça agora 
+                                        <i>
+                                            <svg viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.74197 2.35449L6.63982 0.563468L6.63982 4.14552L9.74197 2.35449ZM0.967773 2.66471L6.95004 2.66471L6.95004 2.04428L0.967773 2.04428L0.967773 2.66471Z" fill="#223C53"/>
+                                            </svg>
+                                        </i>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="podcast-item">
+                            <div class="podcast-item disabled">
                                 <div class="album">
                                     <figure>
-                                        <span>01.</span>
+                                        <span>02.</span>
                                     </figure>
                                 </div>
                                 <div class="info">
-                                    <span class="episode-label">Episódio #01 . 52 min</span>
-                                    <h2>Lorem ipsum dolor sit amet</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna.</p>
-                                    <a href="#" class="btn">Ouça agora</a>
+                                    <span class="episode-label">Episódio #02 • <span class="time"></span></span>
+                                    <h2></h2>
+                                    <p>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </p>
+                                    <div class="date">Disponível: 29/09/2021</div>
                                 </div>
                             </div>
-                            <div class="podcast-item">
+                            <div class="podcast-item disabled">
                                 <div class="album">
                                     <figure>
-                                        <span>01.</span>
+                                        <span>02.</span>
                                     </figure>
                                 </div>
                                 <div class="info">
-                                    <span class="episode-label">Episódio #01 . 52 min</span>
-                                    <h2>Lorem ipsum dolor sit amet</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna.</p>
-                                    <a href="#" class="btn">Ouça agora</a>
+                                    <span class="episode-label">Episódio #02 • <span class="time"></span></span>
+                                    <h2></h2>
+                                    <p>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </p>
+                                    <div class="date">Disponível: 29/09/2021</div>
+                                </div>
+                            </div>
+                            <div class="podcast-item disabled">
+                                <div class="album">
+                                    <figure>
+                                        <span>02.</span>
+                                    </figure>
+                                </div>
+                                <div class="info">
+                                    <span class="episode-label">Episódio #02 • <span class="time"></span></span>
+                                    <h2></h2>
+                                    <p>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </p>
+                                    <div class="date">Disponível: 29/09/2021</div>
                                 </div>
                             </div>
                         </article>
@@ -149,12 +210,43 @@
                                     </a>
                                 </li>
                             </ul>
+                            <h3>Compartilhe⠀⠀•⠀⠀</h3>
                         </nav>
                     </div>
                 </div>
             </div>
         </section>
+        <footer>
+            <aside id="img-footer-1" class="img-footer-1 anm">
+                <img alt="" data-depth=".05" src="img/croped_img20210712_21314190_edit2_1.png">
+            </aside>
+            
+            <aside id="img-footer-2" class="img-footer-2 anm">
+                <img alt="" data-depth="-.05" src="img/img20210712_21550610_edit1_2.png">
+            </aside>
+            <div class="logo-container grid">
+                <div class="wrap">
+                    <div class="logo">
+                        <h3>Oferecimento</h3>
+                        <img alt="" src="img/sulamerica_2.png">
+                    </div>
+                </div>
+            </div>
+            <div class="bg-footer">
+            </div>
+        </footer>
+
     </main>
+    <script>
     
+        var targetElements = document.getElementsByClassName('anm');
+        // or, if you insist on using jQuery
+        var targetElements = $('.anm').get();
+        
+        var scenes = [];
+        for (var i = 0; i < targetElements.length; i++) {
+          scenes.push(new Parallax(targetElements[i]));
+        }
+    </script>
 </body>
 </html>
