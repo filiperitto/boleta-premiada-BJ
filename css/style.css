@@ -1121,6 +1121,8 @@ footer .bg-footer {
   max-width: 165px;
   height: auto;
   margin: 0px auto 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 720px) {
@@ -1135,14 +1137,24 @@ footer .bg-footer {
   height: auto;
   margin: 0 auto;
   max-width: 122px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 720px) {
   .moduleHero .sub-logo {
-    max-width: 385px;
+    max-width: 300px;
+    -webkit-transform: translate(0px, 0);
+            transform: translate(0px, 0);
+    margin-top: 48px;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .moduleHero .sub-logo {
     -webkit-transform: translate(-60px, 0);
             transform: translate(-60px, 0);
-    margin-top: 48px;
+    max-width: 385px;
   }
 }
 
@@ -1166,19 +1178,19 @@ footer .bg-footer {
   width: 177%;
   position: absolute;
   right: 0;
+  right: -66%;
   z-index: 2;
   top: auto;
   bottom: 0%;
-  -webkit-transform: translate(43%, 0);
-          transform: translate(43%, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 720px) {
   .moduleHero .elementos.direita .croqui {
     width: 74%;
     top: 0%;
-    -webkit-transform: translate(8%, 0);
-            transform: translate(8%, 0);
+    right: -9%;
     bottom: auto;
   }
 }
@@ -1190,6 +1202,8 @@ footer .bg-footer {
   z-index: 3;
   top: auto;
   bottom: -2%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-transform: translate(84%, 0%);
           transform: translate(84%, 0%);
 }
@@ -1207,21 +1221,20 @@ footer .bg-footer {
   max-width: 512px;
   width: 123%;
   position: absolute;
-  right: 0;
+  right: -40%;
   z-index: 6;
   top: auto;
   bottom: -3%;
-  -webkit-transform: translate(40%, 0%);
-          transform: translate(40%, 0%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 980px) {
   .moduleHero .elementos.direita .ronaldo {
     width: 100%;
     top: 34%;
-    -webkit-transform: translate(10%, 0%);
-            transform: translate(10%, 0%);
     bottom: auto;
+    right: -3%;
   }
 }
 
@@ -1231,6 +1244,8 @@ footer .bg-footer {
   right: 0;
   top: auto;
   bottom: -30%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-transform: translate(66%, 0%);
           transform: translate(66%, 0%);
   z-index: 3;
@@ -1253,6 +1268,8 @@ footer .bg-footer {
   z-index: 1;
   top: auto;
   bottom: -47%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-transform: translate(15%, 0%);
           transform: translate(15%, 0%);
 }
@@ -1277,17 +1294,17 @@ footer .bg-footer {
   left: 0;
   top: auto;
   bottom: 7%;
-  -webkit-transform: translate(-48%, -30%);
-          transform: translate(-48%, -30%);
+  left: -14%;
   z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 720px) {
   .moduleHero .elementos.esquerda .circle1 {
     top: 49%;
+    top: 24%;
     bottom: auto;
-    -webkit-transform: translate(-26%, -30%);
-            transform: translate(-26%, -30%);
   }
 }
 
@@ -1296,20 +1313,22 @@ footer .bg-footer {
   width: 100%;
   position: absolute;
   left: 0;
+  left: -39%;
   top: auto;
   bottom: 9%;
-  -webkit-transform: translate(-48%, -30%);
-          transform: translate(-48%, -30%);
+  bottom: 22%;
   z-index: 3;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-@media only screen and (min-width: 1310px) {
+@media only screen and (min-width: 980px) {
   .moduleHero .elementos.esquerda .neguinho-beijaflor {
     top: 44%;
+    top: 28%;
     bottom: auto;
+    left: -5%;
     width: 59%;
-    -webkit-transform: translate(-11%, -30%);
-            transform: translate(-11%, -30%);
   }
 }
 
@@ -1317,21 +1336,36 @@ footer .bg-footer {
   max-width: 568px;
   width: 100%;
   position: absolute;
-  left: 0;
+  left: -14%;
+  left: -20%;
   top: auto;
   bottom: 6%;
-  -webkit-transform: translate(-33%, 17%);
-          transform: translate(-33%, 17%);
+  bottom: -3%;
   z-index: 4;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 720px) {
+  .moduleHero .elementos.esquerda .foto {
+    bottom: -6%;
+    left: -30%;
+  }
+}
+
+@media only screen and (min-width: 830px) {
+  .moduleHero .elementos.esquerda .foto {
+    bottom: -11%;
+  }
 }
 
 @media only screen and (min-width: 1310px) {
   .moduleHero .elementos.esquerda .foto {
     width: 80%;
     top: 42%;
+    left: -14%;
+    left: -8%;
     bottom: auto;
-    -webkit-transform: translate(-12%, 0);
-            transform: translate(-12%, 0);
   }
 }
 
@@ -1345,6 +1379,8 @@ footer .bg-footer {
   -webkit-transform: translate(-42%, 0%);
           transform: translate(-42%, 0%);
   z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 720px) {
@@ -1881,7 +1917,7 @@ footer .bg-footer {
   left: -121%;
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1300px) {
   .moduleContent .img-left-1 {
     opacity: 1;
     left: -21%;
@@ -1897,7 +1933,7 @@ footer .bg-footer {
   left: -129%;
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1300px) {
   .moduleContent .img-left-2 {
     opacity: 1;
     left: -29%;
@@ -1925,7 +1961,7 @@ footer .bg-footer {
   left: -129%;
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1300px) {
   .moduleContent .img-left-3 {
     opacity: 1;
     left: -22%;
@@ -1950,10 +1986,9 @@ footer .bg-footer {
   right: -133%;
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1300px) {
   .moduleContent .img-right-1 {
     opacity: 1;
-    right: -33%;
     right: -150px;
     z-index: 2;
   }
@@ -1975,7 +2010,7 @@ footer .bg-footer {
   right: -133%;
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1300px) {
   .moduleContent .img-right-2 {
     opacity: 1;
     right: -33%;
@@ -2004,7 +2039,7 @@ footer .bg-footer {
   right: -133%;
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1300px) {
   .moduleContent .img-right-3 {
     opacity: 1;
     right: -33%;

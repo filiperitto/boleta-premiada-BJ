@@ -24,6 +24,7 @@
         max-width: 165px;
         height: auto;
         margin: 0px auto 0;
+        transition: all 0.3s ease-in-out;
         @include respond-to-min(720){
             max-width: 385px;
         }
@@ -34,10 +35,15 @@
         height: auto;
         margin: 0 auto;
         max-width: 122px;
+        transition: all 0.3s ease-in-out;
         @include respond-to-min(720){
-            max-width: 385px;
-            transform: translate(-60px, 0);
+            max-width: 300px;
+            transform: translate(0px, 0);
             margin-top: 48px;
+        }
+        @include respond-to-min(1140){
+            transform: translate(-60px, 0);
+            max-width: 385px;
         }
     }
     .elementos{
@@ -58,16 +64,19 @@
                 width: 177%;
                 position: absolute;
                 right: 0;
+                right: -66%;
                 z-index: 2;
 
                 top: auto;
                 bottom: 0%;
-                transform: translate(43%, 0);
+                transition: all 0.3s ease-in-out;
+                //transform: translate(43%, 0);
 
                 @include respond-to-min(720){
                     width: 74%;
                     top: 0%;
-                    transform: translate(8%, 0);
+                    right: -9%;
+                    //transform: translate(8%, 0);
                     bottom: auto;
                 }
             }
@@ -79,6 +88,7 @@
                 
                 top: auto;
                 bottom: -2%;
+                transition: all 0.3s ease-in-out;
                 transform: translate(84%, 0%);
                 @include respond-to-min(980){
                     top: 35%;
@@ -90,16 +100,18 @@
                 max-width: 512px;
                 width: 123%;
                 position: absolute;
-                right: 0;
+                right: -40%;
                 z-index: 6;
                 top: auto;
                 bottom: -3%;
-                transform: translate(40%, 0%);
+                transition: all 0.3s ease-in-out;
+                //transform: translate(40%, 0%);
                 @include respond-to-min(980){
                     width: 100%;
                     top: 34%;
-                    transform: translate(10%, 0%);
+                    //transform: translate(10%, 0%);
                     bottom: auto;
+                    right: -3%;
                 }
             }
             .circle2{
@@ -109,6 +121,7 @@
                 
                 top: auto;
                 bottom: -30%;
+                transition: all 0.3s ease-in-out;
                 transform: translate(66%, 0%);
 
                 
@@ -128,6 +141,7 @@
 
                 top: auto;
                 bottom: -47%;
+                transition: all 0.3s ease-in-out;
                 transform: translate(15%, 0%);
                 @include respond-to-min(1360){
                     top: 67%;
@@ -145,12 +159,16 @@
                 left: 0;
                 top: auto;
                 bottom: 7%;
-                transform: translate(-48%, -30%);
+                //transform: translate(-48%, -30%);
+                left: -14%;
                 z-index: 2;
+                transition: all 0.3s ease-in-out;
                 @include respond-to-min(720){
                     top: 49%;
+                    top: 24%;
                     bottom: auto;
-                    transform: translate(-26%, -30%); 
+                    
+                    //transform: translate(-26%, -30%); 
                 }
             }
             .neguinho-beijaflor{
@@ -158,32 +176,48 @@
                 width: 100%;
                 position: absolute;
                 left: 0;
+                left: -39%;
                 top: auto;
                 bottom: 9%;
-                transform: translate(-48%, -30%);
+                bottom: 22%;
+                //transform: translate(-48%, -30%);
                 z-index: 3;
-                @include respond-to-min(1310){
+                transition: all 0.3s ease-in-out;
+                @include respond-to-min(980){
                     top: 44%;
+                    top: 28%;
                     bottom: auto;
+                    left: -5%;
                     width: 59%;
-                    transform: translate(-11%, -30%);
-                    
+                    //transform: translate(-11%, -30%); 
                 }
             }
             .foto{
                 max-width: 568px;
                 width: 100%;
                 position: absolute;
-                left: 0;
+                left: -14%;
+                left: -20%;
                 top: auto;
                 bottom: 6%;
-                transform: translate(-33%, 17%);
+                bottom: -3%;
+                //transform: translate(-33%, 17%);
                 z-index: 4;
+                transition: all 0.3s ease-in-out;
+                @include respond-to-min(720){
+                    bottom: -6%;
+                    left: -30%;
+                }
+                @include respond-to-min(830){
+                    bottom: -11%;
+                }
                 @include respond-to-min(1310){
                     width: 80%;
                     top: 42%;
+                    left: -14%;
+                    left: -8%;
                     bottom: auto;
-                    transform: translate(-12%, 0);
+                    //transform: translate(-12%, 0);
                 }
             }
             .circle2{
@@ -196,6 +230,7 @@
                 bottom: -20%;
                 transform: translate(-42%, 0%);
                 z-index: 1;
+                transition: all 0.3s ease-in-out;
                 @include respond-to-min(720){
                     top: 72%;
                     bottom: auto;

@@ -397,7 +397,7 @@
         position: absolute;
         top: 0%;
         left: -121%;
-        @include respond-to-min(980){
+        @include respond-to-min(1300){
             opacity: 1;
             left: -21%;
             left: -37px;
@@ -410,7 +410,7 @@
         position: absolute;
         top: 35%;
         left: -129%;
-        @include respond-to-min(980){
+        @include respond-to-min(1300){
             opacity: 1;
             left: -29%;
             left: -130px;
@@ -434,7 +434,7 @@
         position: absolute;
         top: 70%;
         left: -129%;
-        @include respond-to-min(980){
+        @include respond-to-min(1300){
             opacity: 1;
             left: -22%;
             left: -50px;
@@ -458,9 +458,8 @@
         position: absolute;
         top: 15%;
         right: -133%;
-        @include respond-to-min(980){
+        @include respond-to-min(1300){
             opacity: 1;
-            right: -33%;
             right: -150px;
             z-index: 2;
         }
@@ -479,7 +478,7 @@
         position: absolute;
         top: 50%;
         right: -133%;
-        @include respond-to-min(980){
+        @include respond-to-min(1300){
             opacity: 1;
             right: -33%;
             right: -73px;
@@ -503,7 +502,7 @@
         position: absolute;
         top: 50%;
         right: -133%;
-        @include respond-to-min(980){
+        @include respond-to-min(1300){
             opacity: 1;
             right: -33%;
             right: -150px;
