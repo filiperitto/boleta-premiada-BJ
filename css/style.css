@@ -1655,6 +1655,7 @@ footer .bg-footer {
 @media only screen and (min-width: 980px) {
   .moduleContent .container .moduloEpisodios .podcast-item .info h2 {
     font-size: 35px;
+    font-size: 26px;
     margin: 4px 0 20px;
   }
 }
