@@ -50,6 +50,11 @@
                 letter-spacing: 0.005em;
                 @include respond-to-min(980){
                     font-size: 19px;
+                    line-height: 22px;
+                    font-size: 22px;
+                    line-height: 29px;
+                    margin: auto;
+                    width: 95%;
                 }
             }
         }
