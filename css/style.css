@@ -1518,12 +1518,25 @@ footer .bg-footer {
   color: #EF442B;
   margin-top: 0;
   margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 163.68%;
+  /* identical to box height, or 28px */
+  color: #EF442B;
+  text-align: center;
+  letter-spacing: 0.295em;
 }
 
 @media only screen and (min-width: 980px) {
   .moduleContent .container .logo-oferecimento .wrap h3 {
     margin-bottom: 0;
     margin-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .moduleContent .container .logo-oferecimento .wrap h3 {
+    font-size: 17px;
   }
 }
 
