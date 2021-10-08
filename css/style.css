@@ -1441,7 +1441,7 @@ footer .bg-footer {
 
 .moduleContent .container .intro h3 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 163.68%;
   /* identical to box height, or 28px */
   color: #EF442B;
@@ -1451,7 +1451,7 @@ footer .bg-footer {
 
 @media only screen and (min-width: 980px) {
   .moduleContent .container .intro h3 {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 

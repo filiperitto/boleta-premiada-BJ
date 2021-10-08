@@ -32,7 +32,7 @@
             margin: auto;
             h3{
                 font-weight: bold;
-                font-size: 20px;
+                font-size: 17px;
                 line-height: 163.68%;
                 /* identical to box height, or 28px */
                 color: $laranja;
@@ -40,7 +40,7 @@
                 text-align: center;
                 letter-spacing: 0.295em;
                 @include respond-to-min(980){
-                    font-size: 17px;
+                    font-size: 20px;
                 }
             }
             p{
