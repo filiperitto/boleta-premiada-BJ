@@ -11,6 +11,7 @@
     }
     .wrap-imgs{
         max-width: 2140px; 
+        max-width: 1600px; 
         padding: 54px 0 125px;
         position: relative; 
         margin: auto;
@@ -60,7 +61,7 @@
         &.direita{
             right: 0;
             .croqui{
-                max-width: 517px;
+                //max-width: 517px;
                 width: 177%;
                 position: absolute;
                 right: 0;
@@ -74,7 +75,7 @@
 
                 @include respond-to-min(720){
                     width: 74%;
-                    top: 0%;
+                    top: 4%;
                     right: -9%;
                     //transform: translate(8%, 0);
                     bottom: auto;
