@@ -1,4 +1,4 @@
-footer{
+.footer-pod{
     width: 100%;
     position: relative;
     z-index: 3;
@@ -81,4 +81,7 @@ footer{
         background-size: cover;
         background-size: contain;
     }
+}
+.footerbrj{
+    margin-top: 0 !important;
 }
